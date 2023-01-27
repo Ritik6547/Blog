@@ -1,0 +1,81 @@
+{% extends 'base.html' %} 
+{% block homeactive %}active{% endblock homeactive  %}
+
+{% block css %}
+<style>
+  .container{
+    min-height: 90vh;
+  }
+</style>
+{% endblock css %}
+{% block body %} 
+
+<div class="container-fluid px-0">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/img/slider1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/img/slider2.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/img/slider3.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+<div class="container my-4">
+    <h2 class="text-center py-4">why choose us?</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="/static/img/pic5.jpeg" class="rounded" alt="loading...">
+                <div class="my-3">
+                    <h4>Free Articles</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem expedita vitae maiores iusto voluptate quasi, neque, ipsum, illum tempora ea vel odio recusandae cum nulla quod explicabo adipisci quo iste?</p>
+              
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="/static/img/pic6.jpeg" class="rounded" alt="loading...">
+                <div class="my-3">
+                    <h4>Best Service</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam pariatur optio. Culpa, illo est aperiam itaque velit, at rerum suscipit laborum nihil ratione voluptate? Odit tempora quidem deserunt quos.</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="/static/img/pic4.jpeg" class="rounded" alt="loading...">
+                <div class="my-3">
+                    <h4>Easy to use</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam consequatur, aliquid ullam vel similique molestias impedit alias, nemo nobis ipsum itaque, beatae provident suscipit numquam eos ea amet obcaecati atque.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock body %}
