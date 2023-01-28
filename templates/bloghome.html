@@ -23,9 +23,30 @@
         {{blog.short_desc|slice:'250'}}...
     </div>
     
-    <a href="/blogpost/{{blog.slug}}" class="text-light"><button type="submit" class="btn btn-primary">Read More...</button></a>
+    <a href="/blogpost/{{blog.slug}}" class="text-light"><button type="submit" class="btn btn-outline-primary btn-sm">Read More...</button></a>
   </div>
 
 {% endfor %}
+<div class="container my-3">
+  
+      <div class="col-md-12  text-right">
+        {% if prev %}
+          <button type="button" class="btn btn-success"><a class="text-light"href="/blog?page={{prev}}">&laquo; Previous</a></button>
+          {% else %}
+          <button type="button" class="btn btn-success"><a class="text-light"href="#">&laquo; Previous</a></button>
+
+        {% endif %}
+         
+        {% if nxt %}
+        <button type="button" class="btn btn-success float-right"><a class="text-light"href="/blog?page={{nxt}}">Next &raquo;</a></button>
+        {% else %}
+        <button type="button" class="btn btn-success float-right"><a class="text-light"href="#">Next &raquo;</a></button>
+
+        {% endif %}
+      
+  </div>
+</div>
+
+
 </div>
 {% endblock body %}
